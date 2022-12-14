@@ -13,5 +13,9 @@ jobs:
     - name: Checkout Source Code
       uses: actions/checkout@v3
 
-#     - name: Generate a Release Package
-#       run: zip -r sample-website-${GITHUB_REF}.zip . -x 'LICENSE' -x 'README.md' -x 'Readme.txt' -x 'changelog.txt' -x '.github'
+    - name: Create a Release
+      uses: elgohr/Github-Release-Action@v4
+      env:
+        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      with:
+        title: MyReleaseMessage
