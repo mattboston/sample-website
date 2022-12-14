@@ -13,5 +13,5 @@ jobs:
     - name: Checkout Source Code
       uses: actions/checkout@v3
 
-    - name: Generate a Release Package
-      run: zip -r sample-website-${GITHUB_REF}.zip . -x 'LICENSE' -x 'README.md' -x 'Readme.txt' -x 'changelog.txt' -x '.github'
+#     - name: Generate a Release Package
+#       run: zip -r sample-website-${GITHUB_REF}.zip . -x 'LICENSE' -x 'README.md' -x 'Readme.txt' -x 'changelog.txt' -x '.github'
