@@ -1,9 +1,3 @@
--- MySQL dump 10.19  Distrib 10.3.35-MariaDB, for Linux (x86_64)
---
--- Host: localhost    Database: myapp
--- ------------------------------------------------------
--- Server version       10.3.35-MariaDB
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */
@@ -15,10 +9,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */
 
---
--- Table structure for table `manufacturer`
---
-
 DROP TABLE IF EXISTS `manufacturer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 /*!40101 SET character_set_client = utf8 */
@@ -29,19 +19,11 @@ CREATE TABLE `manufacturer` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */
 
---
--- Dumping data for table `manufacturer`
---
-
 LOCK TABLES `manufacturer` WRITE;
 /*!40000 ALTER TABLE `manufacturer` DISABLE KEYS */
 INSERT INTO `manufacturer` VALUES (1,'Ford'),(2,'Chevrolet'),(3,'Toyota'),(4,'VW');
 /*!40000 ALTER TABLE `manufacturer` ENABLE KEYS */
 UNLOCK TABLES;
-
---
--- Table structure for table `model`
---
 
 DROP TABLE IF EXISTS `model`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */
@@ -53,10 +35,6 @@ CREATE TABLE `model` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */
-
---
--- Dumping data for table `model`
---
 
 LOCK TABLES `model` WRITE;
 /*!40000 ALTER TABLE `model` DISABLE KEYS */
@@ -72,5 +50,3 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */
-
--- Dump completed on 2023-01-25 19:07:20
