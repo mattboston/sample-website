@@ -31,10 +31,10 @@ LOCK TABLES `manufacturer` WRITE;
 
 INSERT INTO `manufacturer` (`id`, `manufacturer_name`)
 VALUES
-	(1,'Ford'),
-	(2,'Chevrolet'),
-	(3,'Toyota'),
-	(4,'VW');
+  (1,'Ford'),
+  (2,'Chevrolet'),
+  (3,'Toyota'),
+  (4,'VW');
 
 /*!40000 ALTER TABLE `manufacturer` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -57,9 +57,9 @@ LOCK TABLES `model` WRITE;
 
 INSERT INTO `model` (`id`, `model_name`, `manufacturer_id`)
 VALUES
-	(1,'Tacoma',3),
-	(2,'Tahoe',2),
-	(3,'Fiesta',1);
+  (1,'Tacoma',3),
+  (2,'Tahoe',2),
+  (3,'Fiesta',1);
 
 /*!40000 ALTER TABLE `model` ENABLE KEYS */;
 UNLOCK TABLES;
